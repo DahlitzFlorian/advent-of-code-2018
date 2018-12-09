@@ -7,7 +7,7 @@ Most (if not all) solutions will be written in Python.
 ## Checklist ##
 | Solved | Day |
 | ---------- | ---------- |
-| [ &nbsp; ] | Day 1 |
+| [ x ] | Day 1 |
 | [ &nbsp; ] | Day 2 |
 | [ &nbsp; ] | Day 3 |
 | [ &nbsp; ] | Day 4 |

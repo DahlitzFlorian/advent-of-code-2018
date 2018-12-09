@@ -8,7 +8,7 @@ Most (if not all) solutions will be written in Python.
 | Solved | Day |
 | ---------- | ---------- |
 | [ x ] | Day 1 |
-| [ &nbsp; ] | Day 2 |
+| [ x ] | Day 2 |
 | [ &nbsp; ] | Day 3 |
 | [ &nbsp; ] | Day 4 |
 | [ &nbsp; ] | Day 5 |

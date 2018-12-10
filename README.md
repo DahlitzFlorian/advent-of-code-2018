@@ -10,7 +10,7 @@ Most (if not all) solutions will be written in Python.
 | [ x ] | Day 1 |
 | [ x ] | Day 2 |
 | [ x ] | Day 3 |
-| [ &nbsp; ] | Day 4 |
+| [ + ] | Day 4 |
 | [ &nbsp; ] | Day 5 |
 | [ &nbsp; ] | Day 6 |
 | [ &nbsp; ] | Day 7 |
@@ -31,3 +31,6 @@ Most (if not all) solutions will be written in Python.
 | [ &nbsp; ] | Day 22 |
 | [ &nbsp; ] | Day 23 |
 | [ &nbsp; ] | Day 24 |
+
+x - Solved the whole challenge<br>
+\+ - Only solved part one of the challenge

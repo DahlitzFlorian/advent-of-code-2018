@@ -9,7 +9,7 @@ Most (if not all) solutions will be written in Python.
 | ---------- | ---------- |
 | [ x ] | Day 1 |
 | [ x ] | Day 2 |
-| [ &nbsp; ] | Day 3 |
+| [ x ] | Day 3 |
 | [ &nbsp; ] | Day 4 |
 | [ &nbsp; ] | Day 5 |
 | [ &nbsp; ] | Day 6 |

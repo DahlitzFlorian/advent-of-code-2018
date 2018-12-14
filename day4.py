@@ -1,5 +1,6 @@
 import click
 import collections
+import operator
 
 from datetime import datetime
 
@@ -24,13 +25,6 @@ def main(part: int):
 
     data = collections.OrderedDict(sorted(data.items()))
 
-    if part == 1:
-        part_one(data)
-    else:
-        part_two
-
-
-def part_one(data):
     guards = {}
     guard_id = ""
     time = []
@@ -57,10 +51,17 @@ def part_one(data):
             time = time + [i for i in range(begin_minute, date_time.minute)]
             duration += date_time.minute - begin_minute
 
+    if part == 1:
+        part_one(guards)
+    else:
+        part_two(guards)
+
+
+def part_one(guards):
     max_guard = ("", 0)
 
     for guard_id, guard_information in guards.items():
-        duration = sum([duration for time, duration in guard_information])
+        duration = sum([duration for _, duration in guard_information])
 
         if duration > max_guard[1]:
             max_guard = (guard_id, duration)
@@ -79,8 +80,31 @@ def part_one(data):
     )
 
 
-def part_two():
-    pass
+def part_two(guards):
+    best_guard = ("", (0, 0))
+    for guard_id, guard_information in guards.items():
+        minutes_asleep = []
+
+        for list_asleep in guards[guard_id]:
+            minutes_asleep += list_asleep[0]
+
+        count = collections.Counter(minutes_asleep)
+        try:
+            best_minute, number = count.most_common()[0]
+        except IndexError:
+            best_minute = 0
+            number = 0
+
+        if number > best_guard[1][1]:
+            best_guard = (guard_id, (best_minute, number))
+
+    best_guard_id, time = best_guard
+    best_minute, _ = time
+
+    print(f"Guard ID: {best_guard_id} - Best Minute: {best_minute}")
+    print(
+        f"Solution: {int(best_guard_id)} * {best_minute} = {int(best_guard_id) * best_minute}"
+    )
 
 
 if __name__ == "__main__":

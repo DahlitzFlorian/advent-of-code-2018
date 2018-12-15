@@ -13,7 +13,7 @@ Most (if not all) solutions will be written in Python.
 | [ x ] | Day 4 |
 | [ x ] | Day 5 |
 | [ x ] | Day 6 |
-| [ &nbsp; ] | Day 7 |
+| [ x ] | Day 7 |
 | [ &nbsp; ] | Day 8 |
 | [ &nbsp; ] | Day 9 |
 | [ &nbsp; ] | Day 10 |
